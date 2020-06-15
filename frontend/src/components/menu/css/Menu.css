@@ -1,0 +1,25 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
+}
+
+.content {
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+
+.content h1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.content h2 {
+    font-size: 29px;
+}
+
+.content .menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

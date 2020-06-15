@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    background-color: #14171c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .header-navigation {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+
+.header .header-navigation .header-menu {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.header .header-navigation .header-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.header .cart {
+    width: 15%;
+    background-color: #c43731;
+}
