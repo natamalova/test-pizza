@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
+import Cart from '../cart';
 
 import './css/Header.css';
 
@@ -22,10 +24,11 @@ class Header extends React.Component {
                         </li>
                     </ul>
                 </nav>
-                <div className="cart">
-                    {/*<FontAwesomeIcon icon={faShoppingCart} />*/}
-                    <span>1/500</span>
+                <div className="cart-button">
+                    <FontAwesomeIcon icon={faShoppingCart} />
+                    <span>1/500$</span>
                 </div>
+                <Cart/>
             </div>
         );
     }

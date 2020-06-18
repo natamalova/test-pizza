@@ -3,7 +3,7 @@
     justify-content: space-between;
     height: 75px;
     width: 100%;
-    background-color: #14171c;
+    background-color: #2b2d2f;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +32,15 @@
     padding: 10px;
 }
 
-.header .cart {
+.header .cart-button {
     width: 15%;
     background-color: #c43731;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 10px 10px 10px;
+}
+
+.header .cart-button span {
+    padding-left: 20px;
 }
