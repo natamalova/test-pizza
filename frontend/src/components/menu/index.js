@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import MenuItem from '../menu-item';
+import Pizza from '../pizza';
 
 import ProshutoFungi from './img/proshuto_fungi.jpg';
 
@@ -81,6 +82,7 @@ class Menu extends React.Component {
                         <MenuItem key={key} data={item}/>
                     )}
                 </div>
+                <Pizza/>
             </div>
         );
     }

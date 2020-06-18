@@ -1,0 +1,89 @@
+.pizza {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #44474a;
+    border-bottom: 1px solid #44474a;
+    padding: 32px 0;
+    position: relative;
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 35px;
+    color: #888888;
+    opacity: 0.7;
+}
+
+.pizza .pizza-img {
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.pizza .pizza-img img {
+    width: 670px;
+}
+
+.pizza .pizza-info {
+    width: 50%;
+    margin: 0 32px;
+}
+
+.pizza .pizza-info h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.pizza .pizza-info .pizza-info-price {
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.pizza .pizza-info .pizza-counter span {
+    font-size: 20px;
+    color: #ffffff;
+    width: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pizza .pizza-info .pizza-counter span:first-child {
+    padding-left: 0;
+}
+
+.pizza .pizza-info .pizza-counter span:hover {
+    color: #eaea1e;
+}
+
+.pizza .pizza-info .description {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.pizza .pizza-info .pizza-structure {
+    font-size: 14px;
+    color: #888;
+}
+
+.pizza .pizza-info .nutrition {
+    margin: 32px 0 16px 0;
+}
+
+.pizza .pizza-info .nutrition_item {
+    border: 1px solid #44474a;
+    display: inline-block;
+    height: 32px;
+    margin: 0 -1px 16px 0;
+    padding: 0 16px;
+    color: #888;
+    font-size: 13px;
+    line-height: 30px;
+}
