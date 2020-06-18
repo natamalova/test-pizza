@@ -8,6 +8,28 @@ import Cart from '../cart';
 import './css/Header.css';
 
 class Header extends React.Component {
+    
+    constructor(props) {
+        super(props);
+        this.handleEnter = this.handleEnter.bind(this);
+        this.handleLeave = this.handleLeave.bind(this);
+        this.state = {
+            isHovered: false,
+        }
+    }
+    
+    handleEnter() {
+        this.setState({
+            isHovered: true
+        });
+    }
+    
+    handleLeave() {
+        this.setState({
+            isHovered: false
+        });
+    }
+    
     render() {
         return (
             <div className="header">
@@ -24,11 +46,16 @@ class Header extends React.Component {
                         </li>
                     </ul>
                 </nav>
-                <div className="cart-button">
+                <div
+                    onMouseEnter={this.handleEnter.bind(this)}
+                    onMouseLeave={this.handleLeave.bind(this)}
+                    className="cart-button">
                     <FontAwesomeIcon icon={faShoppingCart} />
                     <span>1/500$</span>
+                    {this.state.isHovered && (
+                            <Cart/>
+                        )}
                 </div>
-                <Cart/>
             </div>
         );
     }
