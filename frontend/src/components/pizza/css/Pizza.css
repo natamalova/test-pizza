@@ -4,7 +4,11 @@
     border-top: 1px solid #44474a;
     border-bottom: 1px solid #44474a;
     padding: 32px 0;
-    position: relative;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    z-index: 900;
+    background: #000000;
 }
 
 .close {
@@ -31,6 +35,7 @@
 }
 
 .pizza .pizza-info {
+    position: relative;
     width: 50%;
     margin: 0 32px;
 }

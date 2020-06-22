@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import './css/MenuItem.css';
@@ -10,9 +9,14 @@ class MenuItem extends React.Component {
         super(props);
         this.removeUnit = this.removeUnit.bind(this);
         this.addUnit = this.addUnit.bind(this);
+        this.pizzaClick = this.pizzaClick.bind(this);
         this.state = {
             counter: 0
         }
+    }
+    
+    pizzaClick() {
+        this.props.pizzaClicked && this.props.pizzaClicked(this.props.data, this.props.position);
     }
     
     removeUnit() {
@@ -27,12 +31,10 @@ class MenuItem extends React.Component {
     
     render() {
         return (
-            <div className="menu-item">
-                <Link to="/">
-                    <img src={this.props.data.image} alt="bla"/>
-                </Link>
+            <div className={'menu-item ' + (this.props.data.isClicked ? 'active' : '')}>
+                <img onClick={this.pizzaClick} src={this.props.data.image} alt={this.props.data.image}/>
                 <p className="menu-item-title">
-                    <Link to="/">{this.props.data.title}</Link>
+                    {this.props.data.title}
                 </p>
                 <p className="menu-item-data">
                     {this.props.data.structure}
@@ -51,7 +53,9 @@ class MenuItem extends React.Component {
 }
 
 MenuItem.propTypes = {
-    data: PropTypes.object.isRequired
+    data: PropTypes.object.isRequired,
+    pizzaClicked: PropTypes.func,
+    position: PropTypes.number.isRequired
 };
 
 export default MenuItem;

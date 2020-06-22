@@ -6,6 +6,7 @@
     position: relative;
     padding: 24px 24px 75px 24px;
     color: #fff;
+    font-size: 18px;
     margin: 0 -1px -1px 0;
 }
 
@@ -14,14 +15,13 @@
     z-index: 2;
 }
 
-.menu-item img {
-    width: 100%;
+.menu-item.active {
+    border: 1px solid #eaea1e;
+    z-index: 2;
 }
 
-.menu-item a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
+.menu-item img {
+    width: 100%;
 }
 
 .menu-item .menu-item-data {

@@ -12,10 +12,12 @@ body {
 .content h1 {
     font-size: 45px;
     font-weight: 600;
+    margin: 80px 10px 32px 32px;
 }
 
 .content h2 {
     font-size: 29px;
+    margin-left: 32px;
 }
 
 .content .menu {
